@@ -1,5 +1,7 @@
 package cn.fcsca.gittestgroup.service;
 
+import cn.fcsca.gittestgroup.dao.GitDao;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -11,4 +13,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class GitService {
+
+    @Autowired
+    GitDao gitDao;
 }
