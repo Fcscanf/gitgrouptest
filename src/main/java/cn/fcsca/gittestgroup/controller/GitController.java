@@ -1,5 +1,7 @@
 package cn.fcsca.gittestgroup.controller;
 
+import cn.fcsca.gittestgroup.service.GitService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -11,4 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class GitController {
+
+    @Autowired
+    GitService gitService;
 }
